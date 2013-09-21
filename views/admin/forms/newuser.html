@@ -1,0 +1,27 @@
+<div class="well span6 offset3">
+    <fieldset>
+        <legend>Cadastro de Usuário</legend>
+        <form action="<?php echo $index.'/controls/insert_user.php'; ?>" method="post">
+        <label>Nome:</label>
+        <input required type="text" name="nome" placeholder="Seu nome de usuario" class="span6" autofocus>
+        <label>E-mail:</label>
+        <input required type="email" name="email" placeholder="seuemail@seuemail.com" class="span6">
+        <label>Senha:</label>
+        <input required type="password" name="senha" placeholder="Sua senha" class="span6">
+        <label>Tipo do Usuário:</label>
+        <select name="perfil" class="span5">
+            <option disabled="disabled" selected="selected">.:: Selecione uma das opções ::.</option>
+            <option value="comum">Usuário Comum</option>
+            <option value="admin">Administrador</option>
+        </select>
+        <label>Status do Usuário:</label>
+        <select name="status" class="span5">
+            <option disabled="disabled" selected="selected">.:: Selecione uma das opções ::.</option>
+            <option value="a">Ativo</option>
+            <option value="i">Inativo</option>
+        </select>
+        <input type="submit" value="Cadastrar" class="btn btn-primary pull-right">
+        <div class="clearfix"></div>
+        </form>
+    </fieldset>
+</div>

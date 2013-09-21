@@ -1,0 +1,14 @@
+Lógica Blog
+
+Template
+
+Banco de Dados
+Conexão
+Visual(forms, Logins)
+
+Controle de Login
+	Sessões
+	Login e logout
+	Cadastro de usuarios
+Controle de Post
+	Crud(Create, read, update, delete)

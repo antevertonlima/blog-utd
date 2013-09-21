@@ -1,0 +1,44 @@
+body{background: #335599;}
+.geral{background: #BFBFBF; padding-bottom: 4px;}
+header{height: 160px; background: url(../img/bg-top.jpg) repeat-x 0 0; border-bottom: 2px solid #515151;}
+header a:hover, header a:active{text-decoration: none;}
+.icon-caret-right{color: black;}
+.informacoes{margin-top: 5px;}
+.menu{margin-top: 10px;}
+#logo{margin-top: 30px; margin-left: 20px;}
+.endereco address{margin: 0; padding: 0; font-weight: bold;}
+.separador-right{border-right: #9E9485 3px solid;}
+.espaco-interno{margin: 5px 0; overflow:hidden;}
+.centered{text-align: center; margin:0 auto;}
+.central{margin: 0 auto;}
+.shadow{box-shadow: 0px 1px 8px #515151;}
+.shadow-right{box-shadow: 4px 2px 8px #515151;}
+.radius-right{border-radius: 0px 8px 8px 0px;}
+.radius{border-radius: 8px;}
+.marron1{background: #A06C46;}.marron2{background: #D2BEA3;}
+.percent9{width: 90%;}
+iframe {margin: 5px 0 0 0;}
+.logar, .logonf{float: right;}
+form{margin:0; padding:0; }
+.logonf p{margin:0; padding:10px; float: left;}
+table{background: #efefef}
+thead{background: #ddd;}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+.nav-header{color: #000; font-size: 16px; border-bottom: 1px solid #cecece;}
+.menuVert{background: #C8C4C1; padding: 0 0 10px 0;}
+.menuVert a{color: #7F572C; font-size: 14px; font-weight: bold;}
+.dropdown a:hover{background: #888583;}
+.dropdown-menu{background: #333; margin-left: 30px; width: 100%;}
+.dropdown-menu li a{color:#ccc;}
+.dropdown-menu li a:hover{background: #676767;}
+.conteudo, .menuVert{margin-top: 5px; margin-bottom: 5px;}
+#page{background: url(../img/bg-conteudo.jpg) repeat 0 0; width: 98%; margin:0 auto; padding: 5px 0;}
+.listaprodutos{list-style: none; margin: 0 15px;}
+.listaprodutos li{display: inline-table; width: 124px; margin: 5px 2px 0 2px;}
+.listaprodutos li a{margin:5px 0 0 0; text-transform: uppercase; font-weight: bold;}
+.form-horizontal{width: 80%;padding: 0px 6px 0px 6px;}
+.mapa{width: 87.5%; padding: 0px 6px 0px 6px; }
+#singlebutton{margin: 0 0 5px 0;}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+.footer-full{background: url(../img/bg-conteudo.jpg) repeat 0 0; padding:5px 0; margin: 5px 0;}
+.footer-logo{float:left; margin: 2px 25px}

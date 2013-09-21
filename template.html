@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- meta tags -->
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="description" content="Testes de utilização do bootstrap" />
+		<meta name="keywords" content="Depósito, Construção, Material, Depósito de Material de Construção, Aracati" />
+		<meta name="author" content="http://hebromtech.com.br/" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		
+		<title><?php echo $title; ?> - Blog do Poder - A sua fonte de conhecimento!</title>
+				
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="<?php echo $images; ?>favicon.ico" />
+		<link rel="apple-touch-icon" href="<?php echo $images; ?>favicon.ico" />
+		
+		<!-- Insercao dos arquivos css -->
+		<link href="<?php echo $bootstrap_css; ?>" rel="stylesheet" media="screen">
+		<link href="<?php echo $font_awesome; ?>" rel="stylesheet" media="screen">
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+		<![endif]-->
+		<!-- <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"> -->
+		<link href="<?php echo $app_css; ?>" rel="stylesheet" media="screen">
+	</head>
+
+	<body>
+		<?php include_once($raiz_dir.'/views/topo.html'); ?>
+		<div class="container shadow geral">
+			<header>
+				<div class="row">
+					<div class="span6 logo">
+						<a href="<?php echo $index; ?>" title="Blog do Poder">
+							<img src="http://placehold.it/399x111" id="logo" alt="Depósito Aracati" title="Depósito Aracati" />	
+						</a>					
+					</div><!-- fim logo -->
+					<div class="span6">
+						<div class="row informacoes">
+							<div class="span4 endereco">
+								<address> Rua algum lugar - 0000 </address>
+								<address> Bairro tal lugar - Fortaleza - CE </address>
+								<address> CEP - 60000-000 </address>
+								<address> Fone - 3000 - 9000 </address>
+							</div>
+							<div class="span2">
+								<a href="#" title="Twitter">
+									<i class="icon-twitter-sign icon-5x"></i>
+								</a>
+								<a href="#" title="Facebook">
+									<i class="icon-facebook-sign icon-5x"></i>
+								</a>
+							</div>
+						</div><!-- fim informmacoes -->
+						<div class="row menu">
+							<div class="span6">
+								<a href="./">
+									<img src="<?php echo $images; ?>bt-home.png" alt="Home" title="Home">
+								</a>
+								<a href="sobre.html" class="btn btn-inverse btn-large" title="Quem Somos">Sobre</a>
+								<a href="produtos.html" class="btn btn-inverse btn-large" title="Produtos">Produtos</a>
+								<a href="faleconosco.html" class="btn btn-inverse btn-large" title="Fale Conosco">Fale Conosco</a>
+							</div>
+						</div><!-- fim menu topo -->
+					</div>
+				</div>
+			</header><!-- fim header -->
+			<div class="row bodies">
+				<?php include_once($raiz_dir.'/views/menu.html'); ?>
+				<div class="span9 conteudo">
+					<div id="page" class="radius shadow">
+						<h1>Conteudo aqui</h1>
+					</div>
+				</div><!-- fim conteudo -->
+			</div><!-- fim bodies -->			
+		</div>
+		<div class="container">
+			<footer class="footer-full radius shadow">
+				<div class="row">
+				<div class="span10 offset1">
+					<span class="endereco centered">
+						<address>&copy; Todos os direitos reservados <a href="#" target="blank" title="Everton Lima">Everton Lima</a></address>
+					</span>	
+				</div>
+			</div>
+			</footer><!-- fim footer -->
+		</div>
+		<!-- Insercao dos arquivos js -->
+		<script src="<?php echo $jQuery; ?>"></script>
+		<script src="<?php echo $bootstrap_js; ?>"></script>
+		    <script>
+		    $(document).ready(function()
+		    {
+			    //Handles menu drop down
+			    $('.dropdown-menu').find('form').click(function (e) {
+			    e.stopPropagation();
+			    });
+		    });
+		    </script>
+	</body>
+</html>

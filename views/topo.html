@@ -1,0 +1,32 @@
+  <div class="navbar">
+   <div class="navbar-inner">
+    <div class="container-fluid">
+	    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></a>
+	    
+	    <div class="nav-collapse collapse">
+                <?php
+                    if(isset($_SESSION['admin'])){
+                        include_once($raiz_dir.'/views/admin/menuAdmin.html');
+                    }
+                ?>
+		    <div class="logonf">
+                        <?php 
+                            if(isset($_SESSION['comum'])){
+                                echo "<p>Olá, ".$_SESSION['comum']['nome']." </p>";
+                                echo '<a class="btn btn-danger" href="'.$index.'/controls/logout.php">Sair</a>';
+                            }elseif(isset($_SESSION['admin'])){
+                                echo "<p>Olá, ".$_SESSION['admin']['nome']." </p>";
+                                echo '<a class="btn btn-danger" href="'.$index.'/controls/logout.php">Sair</a>';
+                            }else{
+                                include_once($raiz_dir.'/views/forms/login.html');
+                            }
+                        ?>
+		    </div>
+	    </div>
+	    <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+   </div>
+   <!--/.navbar-inner -->
+  </div>
+  <!--/.navbar -->

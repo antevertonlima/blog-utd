@@ -1,0 +1,18 @@
+<div class="logar">
+	<form action="<?php echo $index.'/controls/logando.php'; ?>" method="post" class="form-inline">
+	    <input type="text" name="email" class="input-small" placeholder="Email">
+	    <input type="password" name="senha" class="input-small" placeholder="Password">
+	    <button type="submit" class="btn btn-info">Logar</button>
+	</form>
+	<a href="#form_cadastro" data-toggle="modal" style="font-size: 10px; margin: 0; padding: 0;">
+	Ainda não é membro? Cadastre-se!
+	</a>
+</div>
+<?php
+	//identificacao do formulario
+	$header = "Formulario de cadastro";
+	//conteudo da modal
+	$body   = $raiz_dir.'/views/forms/cadastro.html';
+	//id da div
+	$id_div = "form_cadastro";
+?>

@@ -1,0 +1,14 @@
+<div class="span6">
+    <form action="<?php echo $index.'/controls/insert_user.php'; ?>" method="post">
+    <label>Nome:</label>
+    <input required type="text" name="nome" placeholder="Seu nome de usuario" class="span6" autofocus>
+    <label>E-mail:</label>
+    <input required type="email" name="email" placeholder="seuemail@seuemail.com" class="span6">
+    <label>Senha:</label>
+    <input required type="password" name="senha" placeholder="Sua senha" class="span6">
+    <input type="hidden" name="perfil" value="comum">
+    <input type="hidden" name="status" value="a">
+    <input type="submit" value="Cadastrar" class="btn btn-primary pull-right">
+    <div class="clearfix"></div>
+    </form>
+</div>
